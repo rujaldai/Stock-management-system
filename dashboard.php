@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
+    header('Location: index.php');
     exit();
 }
 
@@ -70,7 +70,7 @@ $stocks = $conn->query("SELECT * FROM stocks WHERE user_id='$user_id'");
         body {
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-            background: url('11667324_20946011.jpg') no-repeat center center fixed;
+            background: url('images/11667324_20946011.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             display: flex;
